@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <EditText
+        android:id="@+id/editTextGiveNicknameToFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:focusable="true"
+        android:hint="My Friday lunch"
+        android:inputType="text"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <ScrollView 
+        android:id="@+id/scrollViewForNicknameDialog"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+	    
+	    <TextView
+	        android:id="@+id/textViewItemToGetNicknameFavorites"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:gravity="left|center_vertical"
+	        android:padding="5dp"
+	        android:text="Tester"
+	        android:textSize="18dp" />
+	    
+    </ScrollView>
+    
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#90909090" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnSaveNicknameFavorite"
+            android:layout_width="0dp"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:text="Save"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#90909090" />
+
+        <Button
+            android:id="@+id/btnCancelNicknameFavorite"
+            android:layout_width="0dp"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:text="Cancel"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
